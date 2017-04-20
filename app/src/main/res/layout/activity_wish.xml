@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.gjb.babyplan.WishActivity"
+    android:background="#ffbb33">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#c9eec9"
+        android:id="@+id/rl3"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心愿单"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="false"
+            android:textSize="25sp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/btnback"
+            android:background="@drawable/back"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvwish"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ll1"
+        android:layout_below="@+id/rl3"
+        android:layout_alignParentTop="false"
+        android:layout_margin="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etaddwish"
+        android:hint="此处添加心愿"
+        android:layout_alignParentStart="true"
+        android:layout_weight="4" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnaddwish"
+            android:text="添加"
+            android:background="@drawable/round_rect_shape1"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

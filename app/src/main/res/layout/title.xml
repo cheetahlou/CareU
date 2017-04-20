@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:id="@+id/head_center_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="@color/accent_material_light"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/head_TitleBackBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/love"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnback"
+        android:background="@drawable/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

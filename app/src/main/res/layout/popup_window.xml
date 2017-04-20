@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:radius="7dip"
+    android:background="@color/colorPrimary">
+
+    <TextView android:id="@+id/tvtopktmn"
+        android:layout_height="wrap_content"
+        android:text="任务完成，奖励零花钱"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_margin="10dp" />
+
+<!--    <EditText android:id="@+id/data_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="请输入要奖励的零花钱"/>-->
+
+    <LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnOK"
+            android:text="确定"
+            android:background="@drawable/round_rect_shape1"
+            android:layout_margin="5dp">
+        </Button>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_shape1"
+            android:text="取消" android:id="@+id/BtnCancel"
+            android:layout_margin="5dp">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

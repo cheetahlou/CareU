@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#d5cdcd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rl1"
+        android:background="#c9eec9">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加记录"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="false"
+            android:textSize="25sp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/btnback"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:text="上传"
+            android:id="@+id/btnupload"
+            android:background="@drawable/round_rect_shape1"
+            android:layout_alignTop="@+id/btnback"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/etmemcontent"
+        android:gravity="start"
+        android:focusable="true"
+        android:layout_below="@+id/rl1"
+        android:background="#ffffff" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="load"
+        android:text="添加图片"
+        android:background="@drawable/round_rect_shape1"
+        android:id="@+id/btngetimage"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/etmemcontent"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp" />
+
+
+</RelativeLayout>
