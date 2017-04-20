@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gjb.babyplan.MainActivity"
+    tools:context="com.cheetahlou.careu.MainActivity"
     android:background="#f7aa05">
 
     <Button
