@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tb_1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/side_nav_bar"
+    app:navigationIcon="@drawable/ic_chevron_left_white_36dp"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:title="CareU"
+    app:titleTextColor="@color/white">
+
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

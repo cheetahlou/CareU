@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="一问医答" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="我的收藏" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_comment_black_24dp"
+                android:title="意见反馈" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_report_black_24dp"
+                android:title="关于" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
