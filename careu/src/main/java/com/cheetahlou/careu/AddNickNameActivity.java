@@ -29,7 +29,7 @@ public class AddNickNameActivity extends AppCompatActivity {
     private Button.OnClickListener savename=new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
-            getSharedPreferences("Login",MODE_PRIVATE).edit().putString("userName",etaddname.getText().toString()).commit();
+            getSharedPreferences("profile",MODE_PRIVATE).edit().putString("userNickName",etaddname.getText().toString()).commit();
                     finish();
             startActivity(new Intent().setClass(AddNickNameActivity.this,MeActivity.class));
         }

@@ -87,7 +87,7 @@ public class MeActivity extends AppCompatActivity {
         btnlogout=(Button) findViewById(R.id.btnlogout);
         tvmename=(TextView) findViewById(R.id.tvmename);
         tvmeph=(TextView) findViewById(R.id.tvmeph);
-        tvmename.setText(getSharedPreferences("profile",MODE_PRIVATE).getString("userNickname",""));
+        tvmename.setText(getSharedPreferences("profile",MODE_PRIVATE).getString("userNickName",""));
         String pri_ph=getSharedPreferences("profile",MODE_PRIVATE).getString("userPhone","");
         String encrypt_ph=pri_ph.substring(0,3)+"****"+pri_ph.substring(7);
         tvmeph.setText(encrypt_ph);

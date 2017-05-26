@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                                 preferences.edit().putString ("isLogin","1").commit();//将SP中的是否已经登录的信息更改，表示已经登录
 
                                 SharedPreferences preference=getSharedPreferences("profile",MODE_PRIVATE);
-                                preference.edit().putString("userNickname","").commit();//设置初始的昵称
+                                preference.edit().putString("userNickName","").commit();//设置初始的昵称
 
                                 preference.edit().putString("userPhone",etph.getText().toString()).commit();
                                 startActivity(new Intent(LoginActivity.this, Login1Activity.class));
