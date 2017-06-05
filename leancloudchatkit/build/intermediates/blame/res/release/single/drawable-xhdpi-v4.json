@@ -68,6 +68,10 @@
         "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\src\\main\\res\\drawable-xhdpi\\lcim_chat_voice_left.png"
     },
     {
+        "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ic_chevron_left_white_36dp.png",
+        "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\ic_chevron_left_white_36dp.png"
+    },
+    {
         "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\lcim_chat_icon_voice4.png",
         "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\src\\main\\res\\drawable-xhdpi\\lcim_chat_icon_voice4.png"
     },

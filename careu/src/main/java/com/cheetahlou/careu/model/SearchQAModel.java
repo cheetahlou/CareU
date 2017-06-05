@@ -15,9 +15,19 @@ public class SearchQAModel {
      */
     private String url;
     /**
-     * 患者问题
+     * 患者问题标题
      */
-    private String userQ;
+    private String userQTitle;
+
+    /**
+     * 患者问题详情
+     */
+    private String userQDetail;
+
+    /**
+     * 问答时间
+     */
+    private String qDate;
     /**
      * 医生姓名
      */
@@ -40,12 +50,28 @@ public class SearchQAModel {
         this.url = url;
     }
 
-    public String getUserQ() {
-        return userQ;
+    public String getUserQTitle() {
+        return userQTitle;
     }
 
-    public void setUserQ(String userQ) {
-        this.userQ = userQ;
+    public void setUserQTitle(String userQTitle) {
+        this.userQTitle = userQTitle;
+    }
+
+    public String getUserQDetail() {
+        return userQDetail;
+    }
+
+    public void setUserQDetail(String userQDetail) {
+        this.userQDetail = userQDetail;
+    }
+
+    public String getqDate() {
+        return qDate;
+    }
+
+    public void setqDate(String qDate) {
+        this.qDate = qDate;
     }
 
     public String getDoctorName() {

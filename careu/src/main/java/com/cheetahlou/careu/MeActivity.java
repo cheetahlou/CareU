@@ -27,18 +27,21 @@ public class MeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_me);
         init();
         toolbar = (Toolbar) findViewById(R.id.tb_1);
-
+        //设置toolbar的Title
         toolbar.setTitle(R.string.tb_title_me);
-/*        toolbar.setNavigationIcon();
-        toolbar.setLogo();
-        toolbar.setTitle();
-        toolbar.setSubtitle();*/
 
         toolbar.inflateMenu(R.menu.toolbar_menu);
-        //设置toolbar的Title
 
         //去掉setSupportActionBar，才会让Toolbar本身的inflateMenu生效
         //        setSupportActionBar(toolbar);
+
+        //导航按钮(此处为Back)的点击事件
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         //action menu操作菜单按钮的点击事件
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
@@ -53,13 +56,6 @@ public class MeActivity extends AppCompatActivity {
                         break;*/
                 }
                 return false;
-            }
-        });
-        //导航按钮(此处为Back)的点击事件
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               finish();
             }
         });
     }

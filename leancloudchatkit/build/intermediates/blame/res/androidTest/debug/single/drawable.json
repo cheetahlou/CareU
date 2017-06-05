@@ -140,6 +140,10 @@
         "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\bundles\\debug\\res\\drawable\\lcim_bottom_bar_location_button_bg.xml"
     },
     {
+        "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\side_nav_bar.xml",
+        "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\bundles\\debug\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
         "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\drawable\\notification_bg_low.xml"
     },

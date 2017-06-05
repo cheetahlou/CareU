@@ -16,8 +16,9 @@
         <ImageView
             android:id="@+id/conversation_item_iv_avatar"
             style="@style/LCIMAvatar.Large"
+            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"/>
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:id="@+id/conversation_item_tv_unread"

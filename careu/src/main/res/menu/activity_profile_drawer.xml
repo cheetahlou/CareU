@@ -3,15 +3,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_med_reports"
+            android:icon="@drawable/ic_med_reports_black_24dp"
+            android:title="我的病历本" />
         <item
             android:id="@+id/nav_search"
             android:icon="@drawable/ic_search_black_24dp"
             android:title="一问医答" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_health_info"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="健康资讯" />
+        <item
+            android:id="@+id/nav_collection"
             android:icon="@drawable/ic_star_black_24dp"
             android:title="我的收藏" />
         <item

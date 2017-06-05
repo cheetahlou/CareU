@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cheetahlou.careu.MedicalRecordsActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        <include layout="@layout/toolbar"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <!-- 直接添加按钮，自己占用一行 -->
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="独自一行" >
+            </Button>
+
+        </TableRow>
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="独自一行" >
+        </Button>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="允许被收缩允许被收缩允许被收缩允许被收缩" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="允许被拉伸允许被拉伸允许被拉伸" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableLayout>
+</ScrollView>

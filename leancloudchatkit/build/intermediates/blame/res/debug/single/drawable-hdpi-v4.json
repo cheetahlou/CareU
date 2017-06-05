@@ -136,6 +136,10 @@
         "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_chevron_left_white_36dp.png",
+        "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_chevron_left_white_36dp.png"
+    },
+    {
         "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },

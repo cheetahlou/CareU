@@ -5,4 +5,8 @@
     <color name="colorAccent">#ff4081</color>
     <color name="style_blue">#4073ff</color>
     <color name="white">#FFFFFF</color>
+
+    <color name="colorCursor">#cccccc</color>
+    <color name="colorLoginButton">#004684</color>
+    <color name="logoScreenBackground">#F7F7F7</color>
 </resources>

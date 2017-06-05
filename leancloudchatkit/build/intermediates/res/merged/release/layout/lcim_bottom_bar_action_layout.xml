@@ -20,7 +20,7 @@
         android:gravity="center"
         android:text="@string/lcim_chat_bottom_picture"/>
 
-    <TextView
+  <!--  <TextView
         android:id="@+id/input_bar_btn_camera"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -28,5 +28,5 @@
         android:drawablePadding="10dp"
         android:drawableTop="@drawable/lcim_bottom_bar_camera_button_bg"
         android:gravity="center"
-        android:text="@string/lcim_chat_bottom_camera"/>
+        android:text="@string/lcim_chat_bottom_camera"/>-->
 </LinearLayout>

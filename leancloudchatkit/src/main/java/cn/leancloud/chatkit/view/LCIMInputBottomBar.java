@@ -74,6 +74,7 @@ public class LCIMInputBottomBar extends LinearLayout {
   private View pictureBtn;
 
   public static final int RECORD_AUDIO = 0;
+  public static final int WRITE_EXTERNAL_STORAGE = 0;
   private  Context ctx;
 
   /**
@@ -112,7 +113,8 @@ public class LCIMInputBottomBar extends LinearLayout {
     recordBtn = (LCIMRecordButton) findViewById(R.id.input_bar_btn_record);
 
     actionLayout = (LinearLayout) findViewById(R.id.input_bar_layout_action);
-    cameraBtn = findViewById(R.id.input_bar_btn_camera);
+    //拍照发送图片，有bug，先注释掉
+//    cameraBtn = findViewById(R.id.input_bar_btn_camera);
     pictureBtn = findViewById(R.id.input_bar_btn_picture);
 
     setEditTextChangeListener();
@@ -184,18 +186,25 @@ public class LCIMInputBottomBar extends LinearLayout {
     pictureBtn.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        EventBus.getDefault().post(new LCIMInputBottomBarEvent(
-          LCIMInputBottomBarEvent.INPUTBOTTOMBAR_IMAGE_ACTION, getTag()));
+        if (ActivityCompat.checkSelfPermission(ctx, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+          //获取存储权限
+          ActivityCompat.requestPermissions((Activity) ctx, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                  LCIMInputBottomBar.WRITE_EXTERNAL_STORAGE);
+        } else {
+            EventBus.getDefault().post(new LCIMInputBottomBarEvent(
+                    LCIMInputBottomBarEvent.INPUTBOTTOMBAR_IMAGE_ACTION, getTag()));
+        }
+
       }
     });
 
-    cameraBtn.setOnClickListener(new OnClickListener() {
+/*    cameraBtn.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
         EventBus.getDefault().post(new LCIMInputBottomBarEvent(
           LCIMInputBottomBarEvent.INPUTBOTTOMBAR_CAMERA_ACTION, getTag()));
       }
-    });
+    });*/
   }
 
   public void addActionView(View view) {

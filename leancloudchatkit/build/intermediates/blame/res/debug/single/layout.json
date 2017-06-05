@@ -32,12 +32,12 @@
         "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\src\\main\\res\\layout\\lcim_bottom_bar_text_layout.xml"
     },
     {
-        "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
@@ -242,5 +242,9 @@
     {
         "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
         "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\debug\\layout\\toolb.xml",
+        "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\src\\main\\res\\layout\\toolb.xml"
     }
 ]

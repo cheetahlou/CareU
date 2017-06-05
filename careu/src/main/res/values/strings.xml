@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">CareU</string>
+    <!--<string name="app_name">CareU</string>-->
+    <string name="app_name">医患通</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -27,5 +28,12 @@
 
     <string name="square">广场</string>
     <string name="tb_title_me">个人中心</string>
+
+
+    <string name="search_online_hint">请输入疾病、症状关键词</string>
+    <string name="version">版本1.0.0</string>
+    <string name="about_care">呵护您的健康</string>
+    <string name="tb_title_search_online">一问医答</string>
+    <string name="tb_title_health_info">健康资讯</string>
 
 </resources>

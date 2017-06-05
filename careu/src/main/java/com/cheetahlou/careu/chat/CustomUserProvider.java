@@ -34,6 +34,7 @@ public class CustomUserProvider implements LCChatProfileProvider {
     partUsers.add(new LCChatKitUser("Harry", "Harry", "http://www.avatarsdb.com/avatars/young_harry.jpg"));
     partUsers.add(new LCChatKitUser("William", "William", "http://www.avatarsdb.com/avatars/william_shakespeare.jpg"));
     partUsers.add(new LCChatKitUser("Bob", "Bob", "http://www.avatarsdb.com/avatars/bath_bob.jpg"));
+    partUsers.add(new LCChatKitUser("Cheetah", "Cheetah", "http://www.avatarsdb.com/avatars/blue_cheetah.gif"));
   }
 
   @Override

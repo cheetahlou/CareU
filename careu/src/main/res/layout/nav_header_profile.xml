@@ -14,16 +14,17 @@
 
     <ImageView
         android:id="@+id/head_iv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="66dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        app:srcCompat="@drawable/blue_cheetah" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Android Studio"
+        android:id="@+id/nav_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 <!--    <TextView

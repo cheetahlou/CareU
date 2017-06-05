@@ -28,44 +28,47 @@ android {
 }
 
 dependencies {
+    androidTestCompile('com.android.support.test:runner:0.3') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    //    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':leancloudchatkit')
+    // LeanCloud 基础包
+    // 推送与实时聊天需要的包
+    compile('cn.leancloud.android:avoscloud-push:v4.1.0@aar') { transitive = true }
+    // LeanCloud 统计包
+    // LeanCloud 用户反馈包
+    /*
+                    // avoscloud-sns：LeanCloud 第三方登录包
+                    compile ('cn.leancloud.android:avoscloud-sns:v3.+@aar')
+                    compile ('cn.leancloud.android:qq-sdk:1.6.1-leancloud')
+                    // 目前新浪微博官方只提供 jar 包的集成方式
+                    // 请手动下载新浪微博 SDK 的 jar 包，将其放在 libs 目录下进行集成
+
+                    // LeanCloud 应用内搜索包
+                    compile ('cn.leancloud.android:avoscloud-search:v4.1.0@aar')*/
+    //    图片加载库
+    //    汉字转拼音Java类库
+    //    安卓发布/订阅事件总线的优化
+    /*    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+                compile 'com.squareup.okio:okio:1.8.0'*/
+    //解析html网页
+    //glide加载图片时更快，picasso更完整
+    //第三方图像变换库
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:support-vector-drawable:24.2.1'
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:support-v4:24.+'
-    androidTestCompile('com.android.support.test:runner:0.3') {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    }
-    compile project(':leancloudchatkit')
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    // LeanCloud 基础包
+    compile 'com.android.support:support-v4:24.2.1'
     compile 'cn.leancloud.android:avoscloud-sdk:v4.1.0'
-    // 推送与实时聊天需要的包
-    compile('cn.leancloud.android:avoscloud-push:v4.1.0@aar') { transitive = true }
-    // LeanCloud 统计包
     compile 'cn.leancloud.android:avoscloud-statistics:v4.1.0'
-    // LeanCloud 用户反馈包
     compile 'cn.leancloud.android:avoscloud-feedback:v4.1.0@aar'
-    /*
-                // avoscloud-sns：LeanCloud 第三方登录包
-                compile ('cn.leancloud.android:avoscloud-sns:v3.+@aar')
-                compile ('cn.leancloud.android:qq-sdk:1.6.1-leancloud')
-                // 目前新浪微博官方只提供 jar 包的集成方式
-                // 请手动下载新浪微博 SDK 的 jar 包，将其放在 libs 目录下进行集成
-
-                // LeanCloud 应用内搜索包
-                compile ('cn.leancloud.android:avoscloud-search:v4.1.0@aar')*/
-    compile 'com.android.support:recyclerview-v7:23.1.0'
-//    图片加载库
     compile 'com.squareup.picasso:picasso:2.5.2'
-
-//    汉字转拼音Java类库
     compile 'com.github.stuxuhai:jpinyin:1.0'
-//    安卓发布/订阅事件总线的优化
     compile 'de.greenrobot:eventbus:2.4.0'
-    /*    compile 'com.squareup.okhttp3:okhttp:3.3.1'
-            compile 'com.squareup.okio:okio:1.8.0'*/
-//解析html网页
     compile 'org.jsoup:jsoup:1.10.2'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    testCompile 'junit:junit:4.12'
 }

@@ -8,7 +8,13 @@
         <item name="colorAccent">@color/lcim_common_blue</item>
         <item name="actionBarTheme">@style/LCIMActionBarTheme</item>
     </style>
-
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
     <!-- activity -->
     <style name="LCIMActivity" parent="LCIMKitTheme"/>
 
@@ -144,4 +150,5 @@
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:text">@string/lcim_chat_bottom_record_layout_pressToRecord</item>
     </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

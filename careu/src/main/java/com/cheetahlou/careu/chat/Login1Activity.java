@@ -1,5 +1,7 @@
 package com.cheetahlou.careu.chat;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +17,7 @@ import com.avos.avoscloud.im.v2.AVIMException;
 import com.avos.avoscloud.im.v2.callback.AVIMClientCallback;
 import com.cheetahlou.careu.ProfileActivity;
 import com.cheetahlou.careu.R;
+import com.cheetahlou.careu.util.NetworkUtil;
 
 import cn.leancloud.chatkit.LCChatKit;
 
@@ -25,11 +28,13 @@ public class Login1Activity extends AppCompatActivity {
 
   protected EditText nameView;
   protected Button loginButton;
+  private Context context;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_login1);
+    context=this;
 
     nameView = (EditText) findViewById(R.id.activity_login_et_username);
     loginButton = (Button) findViewById(R.id.activity_login_btn_login);
@@ -42,11 +47,17 @@ public class Login1Activity extends AppCompatActivity {
   }
 
   public void onLoginClick() {
-    String clientId = nameView.getText().toString();
+    if(!NetworkUtil.isNetworkAvailable((Activity)context)){
+      toast("请检查网络连接");
+    }
+    String name=nameView.getText().toString();
+    String clientId = name;
     Log.i("mycareu",clientId);
     if (TextUtils.isEmpty(clientId.trim())) {
       Toast.makeText(this, "不能为空", Toast.LENGTH_SHORT).show();
       return;
+    }else{
+      getSharedPreferences("profile",MODE_PRIVATE).edit().putString("userNickName",name).commit();
     }
 
     LCChatKit.getInstance().open(clientId, new AVIMClientCallback() {
@@ -61,5 +72,9 @@ public class Login1Activity extends AppCompatActivity {
         }
       }
     });
+  }
+
+  private void toast(String zz){
+    Toast.makeText(context, zz, Toast.LENGTH_SHORT).show();
   }
 }

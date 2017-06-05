@@ -212,6 +212,10 @@
         "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_chevron_left_white_36dp.png",
+        "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_chevron_left_white_36dp.png"
+    },
+    {
         "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\lcim_chat_voice_right1.png",
         "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\lcim_chat_voice_right1.png"
     },

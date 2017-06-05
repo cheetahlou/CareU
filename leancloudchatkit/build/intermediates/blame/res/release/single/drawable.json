@@ -88,6 +88,10 @@
         "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\release\\drawable\\side_nav_bar.xml",
+        "source": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
         "merged": "G:\\Android\\MyApplication\\CareU\\leancloudchatkit\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\Cheetahlou\\.android\\build-cache\\ff7597b591b4c7193fa8f0e96b7dc5ee39c6f424\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },

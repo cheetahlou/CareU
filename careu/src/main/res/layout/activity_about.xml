@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:context="com.cheetahlou.careu.AboutActivity">
+    <include layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="2dip" >
+
+                <TextView
+                    android:id="@+id/backtoSetButton"
+                    android:layout_width="60dip"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dip"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" >
+                </TextView>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/appicon"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/version"
+                android:textColor="#3dc129"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/about_care"
+                android:textColor="#3dc129"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="©2017-2017"
+                android:textColor="#3dc129"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="https://github.com/cheetahlou/CareU"
+                android:textColor="#3dc129"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="All rights reserved"
+                android:textColor="#3dc129"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="开源相关"
+                android:textColor="#3dc129"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
